@@ -11,6 +11,9 @@
 </head>
 
 <body id="portfolio">
+    <header>
+        <h1 class="name">Shannon Jin</h1>
+    </header>
     <nav>
         <ul>
             <li><a href="index.html">About</a></li>
@@ -18,17 +21,47 @@
             <li><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
-    <main>
+    <main onscroll="scollTop()">
         <h1>Portfolio</h1>
-        <ul id="portfolioItems">
+        <ul id="portfolioItems" >
             <li>
-                <h2><a href="#">Project Name</a></h2>
-                <img src="images/portfolio/project.png"/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Id diam maecenas ultricies mi eget mauris pharetra et. Ac auctor augue
-                    mauris augue neque.</p>
+
+                <h2><a href="#">Food Butler</a></h2> <img src="images/portfolio/food-bulter.jpg" />
+                <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>
+                <p>Built a food management system based on Microsoft SQL Server and Java, allowing different
+                    food
+                    manufacturers to manage their products and APP users to record diet and calories</p>
+
+            </li>
+            <li>
+
+                <h2><a href="#">Pac-Joust</a></h2>
+                <img src="images/portfolio/pacman.jpg" />
+                <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>
+                <p>Created a 2-Dimensional game in Java called Joust with a creative adaptation towards Pac-man
+                </p>
+
+            </li>
+            <li>
+                <h2><a href="#">E-Commerce Recommendation Machine Learning Helper</a></h2>
+                <img src="images/portfolio/e-commerce.jpg" />
+                <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>
+
+                <p>Developed a website by using Python, Streamlit that used E-commerce dataset in Kaggle
+                    Utilized Machine Learning techniques to predict customers’ interests and gave suggestions
+                    based on their interests and other people’s reviews</p>
+            </li>
+            <li>
+                <h2><a href="#">Heart Disease Prediction</a></h2>
+                <img src="images/portfolio/heartdisease.jpg" />
+                <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>
+
+                <p>Applied multiple Machine Learning algorithms (KNN, C5.0 Decision Tree, Regression
+                    Tree, CNN, RNN, etc.) on data, which achieved high accuracy for heart disease prediction</p>
+
             </li>
         </ul>
+        <button id="scollTop">Scoll Top</button>
     </main>
     <footer>
         You can email at jinm(at)rose-hulman.edu

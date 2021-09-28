@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Gemunu+Libre&family=Lato&display=swap');
+
+:root {
+    --vertical-space: 2rem;
+    --horizontal-space: 3rem;
+    --light-color:  200, 169, 172;
+    --body-color: #0F0D0C;
+    --heading-color: #584F46;
+    --contrast-color: #BE7E74;
+    --subheading-color:#6B4F62;
+}
+
+
+body {
+    font-size: 18px;
+    line-height: 1.5;
+    display: grid;
+    grid-template-areas: "head head"
+        "nav nav"
+        "main main"
+        "foot foot";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto auto 1fr auto;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(67.5deg, rgb(215, 215, 215) 0%, rgb(215, 215, 215) 46%, rgb(198, 198, 198) 46%, rgb(198, 198, 198) 49%, rgb(181, 181, 181) 49%, rgb(181, 181, 181) 56%, rgb(164, 164, 164) 56%, rgb(164, 164, 164) 61%, rgb(146, 146, 146) 61%, rgb(146, 146, 146) 75%, rgb(129, 129, 129) 75%, rgb(129, 129, 129) 84%, rgb(112, 112, 112) 84%, rgb(112, 112, 112) 100%), linear-gradient(22.5deg, rgb(215, 215, 215) 0%, rgb(215, 215, 215) 46%, rgb(198, 198, 198) 46%, rgb(198, 198, 198) 49%, rgb(181, 181, 181) 49%, rgb(181, 181, 181) 56%, rgb(164, 164, 164) 56%, rgb(164, 164, 164) 61%, rgb(146, 146, 146) 61%, rgb(146, 146, 146) 75%, rgb(129, 129, 129) 75%, rgb(129, 129, 129) 84%, rgb(112, 112, 112) 84%, rgb(112, 112, 112) 100%), linear-gradient(112.5deg, rgb(215, 215, 215) 0%, rgb(215, 215, 215) 46%, rgb(198, 198, 198) 46%, rgb(198, 198, 198) 49%, rgb(181, 181, 181) 49%, rgb(181, 181, 181) 56%, rgb(164, 164, 164) 56%, rgb(164, 164, 164) 61%, rgb(146, 146, 146) 61%, rgb(146, 146, 146) 75%, rgb(129, 129, 129) 75%, rgb(129, 129, 129) 84%, rgb(112, 112, 112) 84%, rgb(112, 112, 112) 100%), linear-gradient(90deg, rgb(231, 231, 231), rgb(195, 195, 195));
+    background-blend-mode: overlay, overlay, overlay, overlay, normal;
+    color: var(--body-color);
+   
+}
+
+/* 
+for dark mode
+
+body{
+    background-image: linear-gradient(45deg, rgb(37, 6, 46) 0%, rgb(37, 6, 46) 28%, rgb(66, 27, 59) 28%, rgb(66, 27, 59) 31%, rgb(96, 48, 72) 31%, rgb(96, 48, 72) 59%, rgb(125, 69, 85) 59%, rgb(125, 69, 85) 66%, rgb(154, 90, 97) 66%, rgb(154, 90, 97) 68%, rgb(184, 111, 110) 68%, rgb(184, 111, 110) 94%, rgb(213, 132, 123) 94%, rgb(213, 132, 123) 100%), linear-gradient(112.5deg, rgb(37, 6, 46) 0%, rgb(37, 6, 46) 28%, rgb(66, 27, 59) 28%, rgb(66, 27, 59) 31%, rgb(96, 48, 72) 31%, rgb(96, 48, 72) 59%, rgb(125, 69, 85) 59%, rgb(125, 69, 85) 66%, rgb(154, 90, 97) 66%, rgb(154, 90, 97) 68%, rgb(184, 111, 110) 68%, rgb(184, 111, 110) 94%, rgb(213, 132, 123) 94%, rgb(213, 132, 123) 100%), linear-gradient(90deg, rgb(37, 6, 46) 0%, rgb(37, 6, 46) 28%, rgb(66, 27, 59) 28%, rgb(66, 27, 59) 31%, rgb(96, 48, 72) 31%, rgb(96, 48, 72) 59%, rgb(125, 69, 85) 59%, rgb(125, 69, 85) 66%, rgb(154, 90, 97) 66%, rgb(154, 90, 97) 68%, rgb(184, 111, 110) 68%, rgb(184, 111, 110) 94%, rgb(213, 132, 123) 94%, rgb(213, 132, 123) 100%), linear-gradient(135deg, rgb(37, 6, 46) 0%, rgb(37, 6, 46) 28%, rgb(66, 27, 59) 28%, rgb(66, 27, 59) 31%, rgb(96, 48, 72) 31%, rgb(96, 48, 72) 59%, rgb(125, 69, 85) 59%, rgb(125, 69, 85) 66%, rgb(154, 90, 97) 66%, rgb(154, 90, 97) 68%, rgb(184, 111, 110) 68%, rgb(184, 111, 110) 94%, rgb(213, 132, 123) 94%, rgb(213, 132, 123) 100%), linear-gradient(90deg, rgb(100, 205, 26), rgb(46, 36, 113));
+} */
+
+/* main{
+    background-color: rgba(var(--light-color), 0.6);
+} */
+/* 
+header h1, nav, nav a{
+    color: var(--heading-color);
+} */
+
+@media screen and (min-width: 25em) {
+    body {
+        font-size: 18px;
+        line-height: 1.5;
+        display: grid;
+        grid-template-areas: "head head"
+            "nav main"
+            "foot foot";
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: auto 1fr auto;
+    }
+}
+
+body>* {
+    padding-left: var(--horizontal-space);
+    padding-right: var(--horizontal-space);
+}
+
+body>header {
+    grid-area: head;
+}
+
+body>nav {
+    grid-area: nav;
+}
+
+body>nav ul {
+    list-style-type: "\1F41F";
+    padding: 0;
+}
+
+body>main {
+    grid-area: main;
+}
+
+body>footer {
+    grid-area: foot;
+}
+
+
+header,
+footer {
+    padding-top: var(--vertical-space);
+    padding-bottom: var(--vertical-space);
+}
+
+header h1,
+footer h1 {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    font-family: 'Black Ops One', cursive;
+    font-weight: 400;
+    
+}
+h1{
+    color: var(--heading-color);
+}
+
+h1.name {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2,h3{
+    color: var(--subheading-color);
+}
+
+a {
+    color: var(--body-color);
+    text-decoration-color: var(--contrast-color);
+}
+
+a:hover {
+    color: var(--contrast-color);
+}
+
+body#about img {
+    height: 15em;
+}
+
+
+p {
+    max-width: 50em;
+}
+
+body#portfolio ul#portfolioItems {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    flex: 1;
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+
+@media screen and (min-width: 25em) {
+    body#portfolio ul#portfolioItems li {
+        flex-basis: 48%;
+        padding-right: 2%;
+    }
+}
+
+body#portfolio ul#portfolioItems li img {
+    max-width: 100%;
+}
+
+@media (min-width:1280px) {
+    body#portfolio ul#portfolioItems li img {
+        max-width: 600px;
+    }
+}
+
+ img:hover {
+    transform: scale(1.1);
+}
