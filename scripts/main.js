@@ -1,7 +1,8 @@
 function scrollTop(){
-    var profolio = document.getElementById("portfolioItems");
+   
     document.querySelector("#scollTop").onclick = (event) => {
-       console.log(profolio.scrollTop);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 }
-scrollTop()
+
+scrollTop();
